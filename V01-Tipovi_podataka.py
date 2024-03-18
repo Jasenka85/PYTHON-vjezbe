@@ -29,14 +29,10 @@ print(x, "=>", type(x))
 lista=[a,b,x,grad, bool(1)]
 print(lista)
 
-#dijelovi liste
-y = [1,2,3,4,5,6,7,8,9]
-print(y)
-print("y[2] = ", y[2])
-print("y[0:3] = ", y[0:3])
-print("y[5:] = ", y[5:])
+
 
 #ako dodamo element s indexom 0, svi elementi liste će se pomaknuti
+y = [1,2,3,4,5,6,7,8,9]
 y.insert(0,-1)
 print(y)
 
@@ -68,12 +64,6 @@ print("z[3:] = ", z[3:])
 
 w = {1,2,2,3,3,3,4,4,4,4}
 print(w)
-w=sorted(w, reverse=True)
-print(w)
-w.insert(3,5)
-print(w)
-w=sorted(w)
-print(w)
 
 # dictionary (json look-alike)
 d={"name":"Bruno","years": 50}
@@ -104,12 +94,12 @@ print(s + " 2024") # Prints concatenated string
 #s[2]="B"
 t=list(s)
 t[2]="B"
-t="".join(t)
-print(id(t))
 print(t)
+print(id(t))
 t=t.replace("H","M")
-print(id(t))
 print(t)
+print(id(t))
+
 
 # conversions
 
