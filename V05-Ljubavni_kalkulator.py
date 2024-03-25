@@ -28,12 +28,12 @@ def PrebrojiSlova(x, y):
     print()
     s=""
     for i in range(0,k):
-        #ispišemo sve članove niza brojeva
+        #ispišemo sve članove niza brojeva i u isto vrijeme od našeg niza pravimo string
         print(nizbrojeva[i], end=" ")
         s = s + str(nizbrojeva[i])
 
     print()
-
+    #taj string na kraju rastavljamo - to je važno jer se može pojaviti npr. 13, a mi ga moramo gledati kao 1 i 3
     l=len(s)
     noviniz=[]
     for i in range(0,l):
@@ -62,7 +62,7 @@ def Sansa(niz):
         else:
             #inače zbrajamo vanjske članove
             poluniz.insert(i, niz[i] + niz[k - i - 1])
-        #također koristimo for petlju da ispišemo novi niz
+        #također koristimo for petlju da ispišemo novi niz i napravimo string (opet npr. 13 treba rastaviti na 1 i 3)
         print(poluniz[i], end=" ")        
         t = t + str(poluniz[i])
     
